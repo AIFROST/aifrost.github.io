@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SähköVahti - Tietosuojakäytäntö. Kuvaa mitä tietoja sovellus kerää, miten niitä käytetään ja miten voit hallita suostumustasi.">
     <title>Tietosuojakäytäntö - SähköVahti</title>
     <style>
         * {
@@ -88,6 +89,19 @@
             margin-top: 10px;
         }
         
+        .gdpr-notice {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .gdpr-notice h4 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
         @media (max-width: 768px) {
             .content {
                 padding: 20px;
@@ -100,12 +114,19 @@
         <header>
             <h1>⚡ Tietosuojakäytäntö</h1>
             <p>SähköVahti</p>
-            <p class="update-date">Päivitetty: 28.10.2025</p>
         </header>
         
         <div class="content">
+            <div class="gdpr-notice">
+                <h4>🇪🇺 GDPR-yhteensopiva suostumuksenhallinta</h4>
+                <p>EU/EEA-alueella sovellus noudattaa yleistä tietosuoja-asetusta (GDPR). Ensimmäisellä käynnistyskerralla sinulta kysytään suostumus personoitujen mainosten näyttämiseen. Voit hallita suostumustasi milloin tahansa sovelluksen asetuksista.</p>
+            </div>
+            
             <h2>1. Yleistä</h2>
-            <p>SähköVahti ("sovellus", "me", "meidän") kunnioittaa käyttäjiensä yksityisyyttä. Tämä tietosuojakäytäntö kuvaa, miten keräämme, käytämme ja suojaamme tietojasi sovellusta käyttäessäsi.</p>
+            <p>SähköVahti ("sovellus", "me", "meidän") kunnioittaa käyttäjiensä yksityisyyttä ja on sitoutunut noudattamaan EU:n yleistä tietosuoja-asetusta (GDPR) ja muita sovellettavia tietosuojalakeja. Tämä tietosuojakäytäntö kuvaa, miten keräämme, käytämme ja suojaamme tietojasi sovellusta käyttäessäsi.</p>
+            
+            <p><strong>Rekisterinpitäjä:</strong> SähköVahti-sovelluksen kehittäjä<br>
+            <strong>Yhteystiedot:</strong> <a href="mailto:Spotappdevelopers@hotmail.com">Spotappdevelopers@hotmail.com</a></p>
             
             <h2>2. Kerättävät tiedot</h2>
             
@@ -135,58 +156,117 @@
             <h2>3. Tietojen käyttö</h2>
             <p>Kerättyjä tietoja käytetään seuraaviin tarkoituksiin:</p>
             <ul>
-                <li><strong>Sovelluksen toiminnallisuus:</strong> Hintatietojen näyttäminen</li>
-                <li><strong>Ilmoitukset:</strong> Hintailmoitusten lähettäminen</li>
-                <li><strong>Mainokset:</strong> Mainosten näyttäminen (ilmaisessa versiossa)</li>
-                <li><strong>Premium-ostot:</strong> Ostotapahtumien käsittely</li>
+                <li><strong>Sovelluksen toiminnallisuus:</strong> Hintatietojen näyttäminen ja widgetien päivitys (oikeutettu etu)</li>
+                <li><strong>Ilmoitukset:</strong> Hintailmoitusten lähettäminen valitseminasi aikoina (suostumuksesi)</li>
+                <li><strong>Mainokset:</strong> Mainosten näyttäminen ilmaisessa versiossa (suostumuksesi personoituihin mainoksiin tai oikeutettu etu ei-personoituihin mainoksiin)</li>
+                <li><strong>Premium-ostot:</strong> Ostotapahtumien käsittely (sopimuksen täytäntöönpano)</li>
+                <li><strong>Sovelluksen kehittäminen:</strong> Virheiden korjaaminen ja suorituskyvyn parantaminen (oikeutettu etu)</li>
             </ul>
+            
             
             <h2>4. Kolmannet osapuolet</h2>
             
-            <h3>4.1 Google AdMob</h3>
-            <p>Sovellus käyttää Google AdMob -mainospalvelua ilmaisessa versiossa. AdMob saattaa kerätä:</p>
+            <h3>4.1 Google AdMob ja GDPR-suostumus</h3>
+            <p>Sovellus käyttää Google AdMob -mainospalvelua ilmaisessa versiossa. <strong>EU/EEA-alueella</strong> sovellus noudattaa GDPR-vaatimuksia:</p>
+            
+            <h4>Suostumuksen hallinta</h4>
             <ul>
-                <li>Google Advertising ID</li>
-                <li>IP-osoite</li>
-                <li>Laitetiedot</li>
-                <li>Käyttäytymistiedot</li>
+                <li><strong>Ensimmäisellä käynnistyskerralla:</strong> EU/EEA-käyttäjille näytetään automaattisesti suostumuslomake</li>
+                <li><strong>Käyttäjän valinta:</strong> Voit valita personoidut tai ei-personoidut mainokset</li>
+                <li><strong>Suostumuksen muuttaminen:</strong> Voit muuttaa valintaasi milloin tahansa sovelluksen Asetukset → "Mainosten personointi" -osiosta</li>
             </ul>
-            <p>Lue lisää: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+            
+            <h4>AdMob saattaa kerätä (suostumuksesta riippuen):</h4>
+            <ul>
+                <li><strong>Personoidut mainokset (jos annat suostumuksen):</strong>
+                    <ul>
+                        <li>Google Advertising ID</li>
+                        <li>IP-osoite</li>
+                        <li>Laitetiedot ja käyttöjärjestelmä</li>
+                        <li>Käyttäytymistiedot ja kiinnostuksen kohteet</li>
+                        <li>Mainosklikkaustiedot</li>
+                    </ul>
+                </li>
+                <li><strong>Ei-personoidut mainokset (jos et anna suostumusta):</strong>
+                    <ul>
+                        <li>Rajoitetut kontekstitiedot (esim. sovelluksen sisältö)</li>
+                        <li>Yleinen sijainti (maa-taso, ei tarkkaa sijaintia)</li>
+                        <li>Ei käyttäjäkohtaista seurantaa</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p><strong>Oikeusperuste:</strong> Suostumuksesi (GDPR artikla 6(1)(a))</p>
+            <p><strong>Google:n tietosuoja:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+            <p><strong>Google:n mainosasetukset:</strong> <a href="https://adssettings.google.com/" target="_blank">Ads Settings</a></p>
             
             <h3>4.2 Google Play Billing</h3>
             <p>Premium-ostot käsitellään Google Play Billing -palvelun kautta. Google käsittelee maksutiedot.</p>
+            <p><strong>Oikeusperuste:</strong> Sopimuksen täytäntöönpano (GDPR artikla 6(1)(b))</p>
             <p>Lue lisää: <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments Privacy Notice</a></p>
+            
+            <h3>4.3 Firebase Analytics ja Crashlytics</h3>
+            <p>Sovellus voi käyttää Firebase-palveluita sovelluksen laadun ja suorituskyvyn seuraamiseen:</p>
+            <ul>
+                <li><strong>Analytics:</strong> Käyttötilastot ja käyttäjävirtaukset (anonyymisti)</li>
+                <li><strong>Crashlytics:</strong> Kaatumisraportit ja virhelokit</li>
+            </ul>
+            <p><strong>Oikeusperuste:</strong> Oikeutettu etu (GDPR artikla 6(1)(f)) - sovelluksen laadun parantaminen</p>
+            <p>Lue lisää: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></p>
             
             <h2>5. Tietojen tallennusaika</h2>
             <ul>
-                <li><strong>Hintatiedot:</strong> Tallennetaan laitteellesi 7 päivän ajalta</li>
-                <li><strong>Asetukset:</strong> Tallennetaan kunnes poistat sovelluksen</li>
+                <li><strong>Hintatiedot:</strong> Tallennetaan laitteellesi 7 päivän ajalta, poistetaan automaattisesti</li>
+                <li><strong>Asetukset ja suostumukset:</strong> Tallennetaan kunnes poistat sovelluksen tai peruutat suostumuksesi</li>
+                <li><strong>Mainossuostumustiedot:</strong> Google User Messaging Platform (UMP) säilyttää suostumustietoja Google:n käytäntöjen mukaisesti</li>
+                <li><strong>Analytics-tiedot:</strong> Firebase säilyttää aggregoituja tietoja 14 kuukautta</li>
             </ul>
             
             <h2>6. Tietoturva</h2>
-            <p>Toteutamme kohtuullisia toimenpiteitä tietojesi suojaamiseksi. Tiedot tallennetaan paikallisesti laitteellesi.</p>
-            
-            <h2>7. Käyttäjän oikeudet</h2>
-            <p>Sinulla on seuraavat oikeudet:</p>
+            <p>Toteutamme kohtuullisia teknisiä ja organisatorisia toimenpiteitä tietojesi suojaamiseksi:</p>
             <ul>
-                <li><strong>Oikeus tietoihisi:</strong> Voit tarkastella laitteellesi tallennettuja tietoja sovelluksen asetuksissa</li>
-                <li><strong>Oikeus poistaa tiedot:</strong> Voit poistaa kaikki paikalliset tiedot poistamalla sovelluksen</li>
-                <li><strong>Oikeus rajoittaa mainoksia:</strong> Voit ostaa Premium-version tai muuttaa Googlen mainosasetuksia</li>
-                <li><strong>Oikeus peruuttaa ilmoitusluvat:</strong> Voit hallita ilmoituksia laitteesi asetuksissa</li>
+                <li>Tiedot tallennetaan paikallisesti laitteellesi</li>
+                <li>Viestintä hintatietopalveluiden kanssa on salattu (HTTPS)</li>
+                <li>Ei käyttäjätunnuksia tai salasanoja - ei keskitettyä tietokantaa</li>
+                <li>Kolmansien osapuolten palvelut käyttävät alan standardien mukaista salausta</li>
+            </ul>
+            
+            <h2>7. Käyttäjän oikeudet (GDPR)</h2>
+            <p>EU/EEA-käyttäjillä on seuraavat oikeudet:</p>
+            <ul>
+                <li><strong>Oikeus saada pääsy tietoihin (artikla 15):</strong> Voit tarkastella laitteellesi tallennettuja tietoja sovelluksen asetuksissa</li>
+                <li><strong>Oikeus tietojen oikaisuun (artikla 16):</strong> Voit muuttaa asetuksiasi sovelluksessa</li>
+                <li><strong>Oikeus tietojen poistamiseen (artikla 17):</strong> Voit poistaa kaikki paikalliset tiedot poistamalla sovelluksen</li>
+                <li><strong>Oikeus käsittelyn rajoittamiseen (artikla 18):</strong> Voit rajoittaa mainosten personointia muuttamalla suostumustasi</li>
+                <li><strong>Oikeus peruuttaa suostumus (artikla 7(3)):</strong> Voit muuttaa mainossuostumustasi milloin tahansa Asetukset → "Mainosten personointi"</li>
+                <li><strong>Oikeus vastustaa käsittelyä (artikla 21):</strong> Voit ostaa Premium-version poistaaksesi mainokset kokonaan</li>
+            </ul>
+            
+            <h3>7.1 Mainosasetusten hallinta</h3>
+            <p>Voit hallita mainosten personointia seuraavasti:</p>
+            <ul>
+                <li><strong>Sovelluksessa:</strong> Asetukset → "Mainosten personointi" → "Hallitse mainosvalintoja"</li>
+                <li><strong>Google-tasolla:</strong> <a href="https://adssettings.google.com/" target="_blank">Google Ads Settings</a></li>
+                <li><strong>Laitteen tasolla:</strong> Android-asetukset → Google → Mainokset → "Poista mainosten personointi käytöstä"</li>
             </ul>
             
             <h2>8. Muutokset tietosuojakäytäntöön</h2>
-            <p>Voimme päivittää tätä tietosuojakäytäntöä ajoittain. Ilmoitamme merkittävistä muutoksista sovelluksessa.</p>
+            <p>Voimme päivittää tätä tietosuojakäytäntöä ajoittain. Merkittävistä muutoksista ilmoitamme sovelluksessa. Jatkamalla sovelluksen käyttöä päivityksen jälkeen hyväksyt muutokset.</p>
+
             
-            <h2>9. Yhteystiedot</h2>
-            <p>Jos sinulla on kysymyksiä tästä tietosuojakäytännöstä tai haluat käyttää oikeuksiasi, ota yhteyttä:</p>
+            <h2>10. Kansainväliset tiedonsiirrot</h2>
+            <p>Google-palvelut (AdMob, Firebase, Play Billing) voivat siirtää tietoja Yhdysvaltoihin ja muihin maihin. Google noudattaa EU:n tietosuoja-asetusta ja käyttää asianmukaisia suojatoimia (esim. standardisopimuslausekkeet).</p>
+            
+            <h2>11. Yhteystiedot ja tietosuojavalvonta</h2>
+            <p>Jos sinulla on kysymyksiä tästä tietosuojakäytännöstä, haluat käyttää oikeuksiasi tai tehdä valituksen:</p>
             <p>
-                <strong>Sähköposti:</strong> Spotappdevelopers@hotmail.com
+                <strong>Yhteystiedot:</strong><br>
+                Sähköposti: Spotappdevelopers@hotmail.com
             </p>
+
             
             <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
             
-            <p><em>Viimeksi päivitetty: 28. lokakuuta 2025</em></p>
             
             <a href="index.html" class="back-link">← Takaisin etusivulle</a>
         </div>

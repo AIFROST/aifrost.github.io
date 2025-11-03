@@ -113,6 +113,38 @@
             margin: 40px 0;
             color: white;
         }
+
+        .site-logo {
+            display: block;
+            display: block;
+            margin: 0;
+            width: 120px;
+            height: 120px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        .download-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .download-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .download-text {
+            max-width: 560px;
+            text-align: left;
+        }
         
         .download-btn {
             display: inline-block;
@@ -162,9 +194,7 @@
             <h1>SähköVahti</h1>
             <p class="subtitle">Seuraa Suomen sähkön spot-hintoja reaaliajassa</p>
             <div class="badges">
-                <span class="badge">🇫🇮 Suomalainen</span>
-                <span class="badge">📱 Android</span>
-                <span class="badge">🆓 Ilmainen</span>
+
             </div>
         </header>
         
@@ -175,38 +205,59 @@
             <div class="features">
                 <div class="feature">
                     <div class="feature-icon">📊</div>
-                    <h3>Reaaliaikaiset hinnat</h3>
-                    <p>Seuraa tämän hetken, tänään ja huomisen spot-hintoja</p>
+                    <h3>Reaaliaikaiset hinnat ja kaaviot</h3>
+                    <p>Seuraa tämänhetkisiä, tämän päivän ja huomisen spot-hintoja. Hintalistat näyttävät varttikohtaiset hinnat sekä ennusteet.</p>
                 </div>
-                
+
                 <div class="feature">
                     <div class="feature-icon">🔔</div>
-                    <h3>Ilmoitukset</h3>
-                    <p>Päivittäiset yhteenvedot ja ilmoitus huomisen hinnoista</p>
+                    <h3>Mukautettavat ilmoitukset</h3>
+                    <p>Vastaanota päivittäisiä yhteenvetoja.</p>
                 </div>
-                
+
                 <div class="feature">
                     <div class="feature-icon">🔮</div>
                     <h3>Ennusteet</h3>
-                    <p>Näe ennusteet tulevien päivien hinnoista</p>
+                    <p>Näet ennusteet tuleville päiville.</p>
                 </div>
-                
+
                 <div class="feature">
                     <div class="feature-icon">🧮</div>
                     <h3>Laskurit</h3>
-                    <p>Laske sähkön kulutuksesi kustannukset</p>
+                    <p>Laske halvin jakso käyttää sähköä helposti.</p>
                 </div>
-                
+
                 <div class="feature">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Selkeä käyttöliittymä</h3>
-                    <p>Moderni Material Design 3 -ulkoasu</p>
+                    <div class="feature-icon">📱</div>
+                    <h3>Widget — nopea katsaus</h3>
+                    <p>Lisää kotinäytölle widget, joka näyttää juuri nyt -hinnan ja päivän keskiarvon. Widget päivittyy automaattisesti taustalla.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Offline-käyttö ja välimuisti</h3>
+                    <p>Hintadata tallennetaan paikallisesti (7 päivää). Voit tarkastella viimeisimpiä hintoja myös ilman verkkoyhteyttä.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💳</div>
+                    <h3>Poista mainokset (Premium)</h3>
+                    <p>Poista mainokset ostamalla Premium‑versio Google Play ‑kaupasta ja tue sovelluksen kehitystä.</p>
                 </div>
             </div>
         </div>
         
+        <div class="download-section">
+            <div class="download-inner">
+                <img src="app_icon_512.png" alt="SähköVahti logo" class="download-logo" />
+                <div class="download-text">
+                    <a href="https://play.google.com/store/apps/details?id=com.aifrost.sahkovahti" class="download-btn" target="_blank" rel="noopener" aria-label="Lataa SähköVahti Play Storesta">Lataa Play Storesta</a>
+                </div>
+            </div>
+        </div>
+
         <footer>
-            <p>&copy; 2025 SähköVahti </p>
+            <p>&copy; 2025 SähköVahti</p>
             <p>
                 <a href="privacy-policy.html">Tietosuojakäytäntö</a>
             </p>
